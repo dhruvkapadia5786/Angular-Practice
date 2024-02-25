@@ -1,0 +1,75 @@
+.hero {
+    // text-align: center;
+    height: 70vh;
+    color: #4180CB;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    padding:  0px 30% 0px 30%;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+
+    .login-container {
+        display: inline-block;
+        border: 1px solid lightgray;
+        padding: 30px;
+        border-radius: 5px;
+
+        .login-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: poppins;
+        }
+
+        .formGroup {
+            margin-bottom: 3rem;
+
+            .form-label {
+                font-family: poppins;
+                font-size: 18px;
+            }
+
+            .form-control {
+                // Add your styles here
+                font-family: poppins;
+                height: 50px;
+            }
+
+            .invalid {
+                // Add your styles here
+                font-family: poppins;
+            }
+
+            .error-message {
+                font-family: poppins;
+                font-size: 12px;
+                color: red;
+            }
+        }
+
+        .p-tag{
+           font-family: poppins;
+           color : black;
+           .a-tag{
+            color: #4180CB;
+            cursor: pointer;
+           }
+        }
+
+        .submit-button {
+            display: flex;
+            justify-content: center;
+
+            .btn-primary {
+                font-family: poppins;
+                border-radius: 5px;
+                padding: 5px;
+            }
+        }
+    }
+
+}

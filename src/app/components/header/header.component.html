@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="flex-row">
+      <img src="../../../assets/logo.png" routerLink="/dashboard" height="50px" width="50px" class="logo">
+    <div class="flex-row align-center">
+      @if (isAuthenticated$ | async ) {
+      <div class="px-2 cursor-pointer"><a routerLink="/user-list">View Users</a></div>
+      <div class="px-2 cursor-pointer"><a routerLink="/products">View Products</a></div>
+      <div class="px-2 cursor-pointer"> <a routerLink="/file-uploader">File Upload</a></div>
+      <div class="px-2 cursor-pointer"> <a routerLink="/animation">Animation</a></div>
+
+      <div class="px-2 cursor-pointer" (click)="onLogout()">Logout</div>
+      } @else {
+      <div class="px-2 cursor-pointer"><a routerLink="/about-us">About Us</a></div>
+      <div class="px-2 cursor-pointer"><a routerLink="/contact-us">Contact Us</a></div>
+      <div class="px-2 cursor-pointer"><a routerLink="/">Login</a></div>
+      <div class="px-2 cursor-pointer"><a routerLink="/register">Register</a></div>
+      }
+    </div>
+  </div>
+</header>

@@ -1,0 +1,63 @@
+<div class="hero">
+  <div class="register-container">
+    <h4 class="title">Register Page</h4>
+    <hr>
+    <div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmitOne()" autocomplete="off" novalidate>
+        <!-- First Name -->
+        <div class="formGroup mb-3">
+          <label for="firstName" class="form-label" style="font-family: poppins;">First Name</label>
+          <input type="text" id="firstName" class="form-control" style="height: 50px;font-family: poppins;" 
+            [class.invalid]="registerForm.get('firstName')?.hasError('required') && registerForm.get('firstName')?.touched"
+            placeholder="Enter first name" formControlName="firstName" />
+          @if (registerForm.get('firstName')?.hasError('required') &&
+          registerForm.get('firstName')?.touched ) {
+          <span style="font-family: poppins;color: red;">first name is required.</span>
+          }
+          <!-- <span *ngIf="registerForm.get('firstName')?.hasError('required') && registerForm.get('firstName')?.touched" style="font-family: poppins; color: red;">First Name is required.</span> -->
+        </div>
+
+        <!-- Last Name -->
+        <div class="formGroup mb-3">
+          <label for="lastName" class="form-label" style="font-family: poppins;">Last Name</label>
+          <input type="text" id="lastName" class="form-control"  style="height: 50px;font-family: poppins;"
+            [class.invalid]="registerForm.get('lastName')?.hasError('required') && registerForm.get('lastName')?.touched"
+            placeholder="Enter last name" formControlName="lastName" />
+          @if (registerForm.get('lastName')?.hasError('required') &&
+          registerForm.get('lastName')?.touched ) {
+          <span style="font-family: poppins;color: red;;">last name is required.</span>
+          }
+        </div>
+
+        <!-- Email -->
+        <div class="formGroup mb-3">
+          <label for="email" class="form-label" style="font-family: poppins;">Email Address</label>
+          <input type="email" id="email" class="form-control"  style="height: 50px;font-family: poppins;"
+            [class.invalid]="registerForm.get('email')?.hasError('required') && registerForm.get('email')?.touched"
+            placeholder="Enter email address" formControlName="email" />
+          @if (registerForm.get('email')?.hasError('required') &&
+          registerForm.get('email')?.touched ) {
+          <span style="font-family: poppins;color: red;;">Email address is required.</span>
+          }
+        </div>
+
+        <div class="formGroup mb-3">
+          <label for="password" class="form-label" style="font-family: poppins;">Password</label>
+          <input type="text" id="password" class="form-control" style="height: 50px;font-family: poppins;"  [class]="{
+                  invalid:
+                  registerForm.get('password')?.hasError('required') &&
+                  registerForm.get('password')?.touched
+                }" placeholder="Enter password" formControlName="password" />
+          @if (registerForm.get('password')?.hasError('required') &&
+          registerForm.get('password')?.touched ) {
+          <span style="font-family: poppins;color: red;;">Password is required.</span>
+          }
+        </div>
+        <p class="p-tag">Already have an account ? <a class="a-tag" routerLink="/">Login Here</a></p>
+        <div class="submit-button">
+          <button type="submit" class="btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

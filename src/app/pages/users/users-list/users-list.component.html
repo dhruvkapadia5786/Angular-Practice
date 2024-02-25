@@ -1,0 +1,65 @@
+<div class="hero">
+  <!-- users/users.component.html -->
+<!-- <p
+  style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 24px;font-weight: 500;margin-bottom: 20px;">
+  Angular CRUD : Users List</p>
+  <div style="display: flex; width: 90%; justify-content: center;align-items: center;margin-left: 70px ;">
+    <table>
+      <thead >
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+  <p style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 24px;font-weight: 500;margin-bottom: 20px;">
+    Angular CRUD : Users List
+  </p>
+  <div style="display: flex; width: 90%; justify-content: center;align-items: center;margin-left: 70px ;">
+    <table>
+      <thead>
+        <tr>
+          <th style="font-family: poppins ;font-size: 16px">ID</th>
+          <th style="font-family: poppins ;font-size: 16px">Name</th>
+          <th style="font-family: poppins ;font-size: 16px">Username</th>
+          <th style="font-family: poppins ;font-size: 16px">Email</th>
+          <th style="font-family: poppins ;font-size: 16px">Address</th>
+          <th style="font-family: poppins ;font-size: 16px">Phone</th>
+          <th style="font-family: poppins ;font-size: 16px">Website</th>
+          <th style="font-family: poppins ;font-size: 16px">Company</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (user of users; track user.id) {
+          <tr>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.id }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.name }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.username }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.email }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.address.street }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.phone }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.website }}</td>
+            <td style="font-family: poppins ;font-size: 16px">{{ user.company.name }}</td>
+          </tr>
+        } @empty {
+          <div style="display: flex; flex-direction: row; justify-content: center;padding: 20px;">
+            <tbody
+          style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 24px;font-weight: 500;margin-bottom: 20px;">
+          Oops 😕 No users found ! </tbody>
+          </div>  
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  

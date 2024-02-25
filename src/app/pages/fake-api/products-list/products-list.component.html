@@ -1,0 +1,18 @@
+
+  <p
+style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 24px;font-weight: 500;margin-bottom: 20px;">
+Angular v17 : All Products</p>
+<button style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 18px;font-weight: 400;margin-bottom: 20px; background-color: black;color: white; border-radius: 5px;margin-left: 30px; padding: 8px;" (click)="addProduct()">Add Product</button>
+<div class="row" style="margin: auto;">
+  @for (product of products; track product.id) {
+  <div class="col-md-4">
+    <app-card [product]="product"></app-card>
+  </div>
+  } @empty {
+  <div style="display: flex; flex-direction: row; justify-content: center;padding: 20px;">
+    <p
+  style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 24px;font-weight: 500;margin-bottom: 20px;">
+  Oops 😕 No products found !</p>
+  </div>
+  }
+</div>

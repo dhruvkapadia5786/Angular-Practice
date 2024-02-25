@@ -1,0 +1,41 @@
+header {
+  // border: 1px solid lightgray;
+  // background-color: #152F4F;
+  background-image: url('../../../assets/wave.svg');
+  // background-repeat: no-repeat;
+  background-color: #f3f3eb;
+  padding: 10px;
+  height: 180px;
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      margin-left: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    div {
+      margin-top: 5px;
+
+      .px-2 {
+        cursor: pointer;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-family: poppins
+      }
+
+      .px-2.cursor-pointer {
+        cursor: pointer;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-family: poppins
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="product.image" [alt]="product.title" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title| slice:0:25  }}</h5>
+    <p class="card-text">{{ product.description | slice:0:100 }}{{ product.description.length > 100 ? '...' : '' }}
+    <br>
+    <br>
+    <p class="card-text" style="font-weight: 800;font-size: 24px;">${{ product.price }}</p>
+    <br>
+    <a href="#"
+      style="font-family: poppins;justify-content: center;display: flex;flex-direction: row;text-align: center;font-size: 24px;font-weight: 500;margin-bottom: 20px;font-size: 18px;"
+      class="btn btn-primary">Add to Cart</a>
+  </div>
+</div>
