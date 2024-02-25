@@ -1,28 +1,32 @@
-just clone this angular-app & see what angular magic can do
-after cloning do...
- - npm i :- to install dependencies
- - then clone the backend to use register & login api only then u'll be able to see angular magic
-   Backend clone link : `https://github.com/dhruvkapadia5786/Node-Practice` or `https://github.com/dhruvkapadia5786/Node-Practice.git`
-   -do npm i to install dependencies for backend
-   -provide or create an .env file
+#Just clone this angular-app & see what angular magic can do
+#after cloning do...
+ #- npm i :- to install dependencies
+ #- then clone the backend to use register & login api only then u'll be able to see angular magic
+   #Backend clone link : 
+   #`https://github.com/dhruvkapadia5786/Node-Practice` or 
+   #`https://github.com/dhruvkapadia5786/Node-Practice.git`
+   #-do npm i to install dependencies for backend
+   #-provide or create an .env file
 
-.ENV file structure
-------------------------------START OF FILE--------------------------------
+##.ENV file structure
+##START OF FILE
+
 #port
-  PORT= `YOUR_PORT`  
+PORT= `YOUR_PORT`  
 
 #mongo_uri
-  DB_URL= `MONGO_DB_URL`
+DB_URL= `MONGO_DB_URL`
 
 #aws
-  S3_BUCKET_NAME= `BUCKET_NAME`
-  AWS_ACCESS_KEY_ID= `AWS_ACCESS_KEY`
-  AWS_SECRET_ACCESS_KEY= `AWS_SECRET_KEY`
-  AWS_BUCKET_REGION= `AWS_BUCKET_REGION`
+S3_BUCKET_NAME= `BUCKET_NAME`
+AWS_ACCESS_KEY_ID= `AWS_ACCESS_KEY`
+AWS_SECRET_ACCESS_KEY= `AWS_SECRET_KEY`
+AWS_BUCKET_REGION= `AWS_BUCKET_REGION`
 
 #secret key
-  SECRET_KEY= `your-secret-key`
---------------------------------END OF FILE----------------------------------- 
+SECRET_KEY= `your-secret-key`
+##END OF FILE 
+
 # Angular17
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
